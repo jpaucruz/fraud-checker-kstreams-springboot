@@ -97,8 +97,8 @@ Once this is done, the process is running and monitoring all movements to detect
 Finally, you can check the operation of the process by accessing Kafka UI, verifying the different topics.
 
 ```http request
-http://localhost:9081/ui/clusters/local/topics/movements"
-http://localhost:9081/ui/clusters/local/topics/fraud-cases"
+http://localhost:9081/ui/clusters/local/topics/movements
+http://localhost:9081/ui/clusters/local/topics/fraud-cases
 ```
 
 With this, you already have all the tools to play with the process. **Enjoy!**
