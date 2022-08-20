@@ -3,7 +3,7 @@
 
 This project defines how to detect fraud operations in real time for a banking organization.
 
-For this, it uses **Kafka Streams**, a client library for building applications, where the input and output are stored in Kafka clusters. It combines the ease of implementing applications in languages like Java, with the benefits of Kafka technology. 
+For this, it uses **Kafka Streams**, a client library for building applications, where the input and output are stored in Kafka clusters. It combines the ease of implementing applications in languages like Java, with the benefits of Kafka technology.
 
 If you want to learn more about Kafka Streams, please visit its documentation: https://kafka.apache.org/documentation/streams/ .
 
@@ -71,7 +71,9 @@ To do this, run the following script
 user@machine:~$ sh infrastructure/2-generate-fraud-cases.sh
 ```
 
-Once finished, different movements will be available in the topic ***movements*** to enrich our fraud process
+Once finished, different movements will be available in the topic ***movements*** to enrich our fraud process.
+
+![MOVEMENTS_IN_KAFKA](scenarios/movements.png)
 
 #### Run _Fraud Checker_ process
 
@@ -91,6 +93,8 @@ user@machine:~$  java -jar target/fraud-checker-kstreams-0.0.1-SNAPSHOT.jar
 ```
 
 Once this is done, the process is running and monitoring all movements to detect possible fraud. In case of fraud, an event with the affected movements will be ingested in the ***fraud-cases*** topic.
+
+![FRAUD_IN_KAFKA](scenarios/fraud.png)
 
 #### Analyze the results
 
