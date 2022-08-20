@@ -19,7 +19,6 @@ import java.util.Map;
 @Service
 public class FraudChecker {
 
-
     public static final String MOVEMENTS_TOPIC = "movements";
     public static final String FRAUD_TOPIC = "fraud-cases";
     public static final int ONLINE_MOVEMENT = 3;
