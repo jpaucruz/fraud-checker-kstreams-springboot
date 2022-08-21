@@ -43,7 +43,7 @@ It is important to comment that the process is only responsible for reporting po
 
 The details to execute the proposed solution to the problem are explained below.
 
-#### Build infrastructure
+#### Build environment
 
 First, we build the infrastructure that allows us to simulate the defined use case.
 
@@ -106,3 +106,11 @@ http://localhost:9081/ui/clusters/local/topics/fraud-cases
 ```
 
 With this, you already have all the tools to play with the process. **Enjoy!**
+
+#### Destroy environment
+
+Finally, to destroy the environment, we simply have to run the following script:
+
+```console
+user@machine:~$ sh infrastructure/3-stop.sh
+```
